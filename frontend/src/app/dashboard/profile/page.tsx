@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { profile as fetchProfile } from "@/services/auth"
 import { updateUser } from "@/services/user";
-import LoadingSpinnerScreen from "@/ui/LoadingSpinnerScreen";
 import Modal from "@/ui/Modal"
 import { ModalProps } from "@/interfaces/IModal"
 
@@ -15,7 +14,7 @@ export default function ProfilePage() {
         number: ""
     })
 
-    const[loading, setLoading] = useState(true)
+    const[, setLoading] = useState(true)
     const[isSubmitting, setIsSubmitting] = useState(false)
     const [modal, setModal] = useState<ModalProps | null> (null)
 
@@ -54,8 +53,8 @@ export default function ProfilePage() {
         setForm((prev) => ({...prev, [name]: sanitizedValue}));
     }
 
-    const handleSubmit = async (e: React. FormEvent) => {
-        e.preventDefault(),
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
         setIsSubmitting(true)
         try {
             const updated = await updateUser(form.id, {

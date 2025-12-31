@@ -29,7 +29,7 @@ export default function DashboardPage(){
     const [chartData, setChartData] = useState<ChartPoint[]>([])
     const [summary, setSummary] = useState<SummaryData | null>(null)
     const [recentTransactions, setRecentTransactions] = useState<Transaction[]>([])
-    const [user, setUser] = useState<{ name?: string}>({})
+    const [_user, setUser] = useState<{ name?: string}>({})
 
     const fetchData = async () => {
         try {

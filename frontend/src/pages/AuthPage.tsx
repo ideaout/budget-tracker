@@ -1,5 +1,5 @@
 "use client"
-import react, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useRouter } from "next/navigation";
@@ -187,7 +187,7 @@ const AuthPage = () => {
                 {/* untuk mengubah kondisi auth nya (login/register) */}
                 {isLogin ? (
                     <>
-                        Don't have an account? {" "} 
+                        Don&apos;t have an account? {" "} 
                         <button 
                             type="button"
                             className="text-indigo-600 hover:underline"
