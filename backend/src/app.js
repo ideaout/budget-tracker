@@ -9,6 +9,11 @@ app.use(express.json());
 app.use(enableCORS);
 app.use(setSecurityHeaders);
 
+// Health check
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', message: 'Budget Tracker API is running' });
+});
+
 app.use('/api/v1', routes);
 app.use(errorHandler);
 
