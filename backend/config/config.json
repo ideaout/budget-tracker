@@ -16,11 +16,13 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": "mamank546",
-    "database": "budget_tracker_prod",
-    "host": "127.0.0.1",
-    "port": 5432,
-    "dialect": "postgres"
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
