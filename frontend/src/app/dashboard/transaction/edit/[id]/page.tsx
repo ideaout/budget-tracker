@@ -12,7 +12,8 @@ import { TransactionFormData } from "@/interfaces/ITransaction";
 
 
 export default function EditTransactionPage(){
-    const {id} = useParams()
+    const params = useParams()
+    const id = params?.id as string
     const router = useRouter()
     
     const [initialData, setInitialData] = useState<TransactionFormData>()
