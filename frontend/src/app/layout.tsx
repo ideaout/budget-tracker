@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Budget Tracker Deacourse",
-  description: "Budget Tracker",
+  title: "Budget Tracker",
+  description: "Personal finance app with visual charts & insights",
 };
 
 export default function RootLayout({
