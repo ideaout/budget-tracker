@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "fernandonicholas",
+    "password": "jesuslovesu",
+    "database": "budget_tracker_dev",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": "mamank546",
+    "database": "budget_tracker_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": "mamank546",
+    "database": "budget_tracker_prod",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
